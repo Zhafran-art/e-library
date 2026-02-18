@@ -3,11 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('homepage' , [
+        'title' => 'E-Library'
+    ]);
 });
 Route::get('/hall', function () {
-    return view('hall');
+    return view('hall' , [
+        'title' => 'Hall'
+    ]);
 });
 Route::get('/about', function () {
-    return view('about');
+    return view('about' , [
+        'title' => 'About'
+    ]);
 });

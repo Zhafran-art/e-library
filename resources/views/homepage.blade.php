@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
-@section('content')
-    <p>Ini halaman {{ $title }}</p>
+@section('konten')
+    <h1 class="text-3xl">Welcome to the {{ $title }}</h1>
 @endsection
